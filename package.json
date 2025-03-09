@@ -2,6 +2,7 @@
   "name": "x-clone",
   "version": "1.0.0",
   "main": "backend/server.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon backend/server.js",
@@ -14,7 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/SirDon3/x-clone/issues"
   },
@@ -33,4 +34,7 @@
   "devDependencies": {
     "nodemon": "^3.1.9"
   }
+
+ 
+  
 }
