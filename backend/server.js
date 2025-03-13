@@ -3,6 +3,8 @@ import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 
 import authRoutes from "./routes/auth.routes.js";
+import userRoutes from "./routes/user.routes.js";
+
 import connectMongoDB from "./db/connectMongoBD.js";
 
 dotenv.config();
@@ -16,6 +18,7 @@ app.use(express.urlencoded({ extended: true })); // This is a built-in middlewar
 app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
+app.use("/api/user", userRoutes);
 
 
 app.listen(PORT, () => {
